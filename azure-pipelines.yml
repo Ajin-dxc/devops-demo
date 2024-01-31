@@ -16,10 +16,7 @@ stages:
       jobs:
       - deployment: Job
         environment: my_environment
-        strategy:
-          runOnce:
-            deploy:
-              steps:
+
 steps:
 - task: Maven@3
   inputs:
