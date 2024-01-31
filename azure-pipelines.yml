@@ -5,6 +5,7 @@
 
 trigger:
 - main
+Batch:True
 
 pool:
   vmImage: ubuntu-latest
