@@ -10,6 +10,16 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+  lockBehavior: sequential
+stages:
+    - stage: Stage
+      jobs:
+      - deployment: Job
+        environment: my_environment
+        strategy:
+          runOnce:
+            deploy:
+              steps:
 steps:
 - task: Maven@3
   inputs:
